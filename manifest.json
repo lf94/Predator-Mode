@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Predator Mode",
+  "description": "This extension inverts all images on a web page",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [{
+	"matches":["<all_urls>"],
+	"css": ["invert.css"]
+  }]
+}
